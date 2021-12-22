@@ -47,16 +47,19 @@ table {
 }
 
 
-
+html {
+    font-size: 16px;
+}
 .bg-img {
     background: url(../TA-JS-value-variable-and-types-TJaaaa/osman-yunus-bekcan-wnXo6T_cb3s-unsplash.jpg), no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100vh;
 }
 
 p{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 900;
     text-align: center;
-    color: tomato;
+    color: rgb(33,57,106);
+    padding-top: 6rem;
 }
