@@ -37,6 +37,21 @@ alert(`The sum of 21 and 32 is ${num1 +num2} `);
     Profession: [userProfession]` (it should be in three different lines)
 */
 
+let username = prompt("What is your name?");
+let userProfession = prompt("What is your profession?");
+let isAdult = confirm("Are you an adult?");
+
+alert(`I am ${username} a ${userProfession}`);
+console.log(`I am ${username} a ${userProfession}`);
+
+alert(`Username: ${username}
+Adult: ${isAdult}
+Profession: ${userProfession}`);
+
+console.log(`Username: ${username}
+Adult: ${isAdult}
+Profession: ${userProfession}`);
+
 /*
 . Addition using prompt
 
@@ -47,3 +62,13 @@ alert(`The sum of 21 and 32 is ${num1 +num2} `);
   - Log using console.log [numA - numB]
   - Log using console.log [numA * numB]
 */
+
+let numA = prompt("Enter first value-");
+let numB = prompt("Enter second value-");
+
+alert(`Sum of both values - ${ numA + numB}` );
+alert(`Difference of both values - ${ numA - numB}` );
+alert(`Product of both values - ${ numA * numB}` );
+
+console.log(`Difference of both values - ${ numA - numB}` );
+console.log(`Product of both values - ${ numA * numB}` );
