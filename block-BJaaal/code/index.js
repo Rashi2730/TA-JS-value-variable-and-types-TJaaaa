@@ -5,6 +5,9 @@
 - Define another variable named `bio` and assign a value `Learning to code`. Use `let` keyword to define the variable.
 */
 
+const username = "Rashi";
+let bio = "Learning to code";
+
 let firstName = "Arya";
 let lastName = "Stark";
 
@@ -12,6 +15,11 @@ let lastName = "Stark";
   - Alert message saying `I am [username] and my bio is [bio]`. Replace square brackets with the value of variable.
   - Alert the message `I'm Arya Stark of Winterfell` using the variable name firstName and lastName.
 */
+
+newName = "I am Rashi Learning to code";
+newName2 = `I'm ${firstName} ${lastName} of Winterfell`;
+alert(newName);
+alert (newName2);
 
 /* Do the following using string template literal
   - Alert message saying `I am [username] and my bio is [bio]`. Replace square brackets with the value of variable.
