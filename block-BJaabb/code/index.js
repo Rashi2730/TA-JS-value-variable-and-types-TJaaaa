@@ -10,15 +10,12 @@ let user = prompt("Enter the name:");
 alert(user);
 
 let userName = user;
-console.log(user);
-console.log(userName);
+console.log(user, userName);
 
 let age= 22 , isLearning= true ;
 
 user= "John";
-userName= user;
-console.log(user);
-console.log(userName);
+console.log(user, userName);
 
 /* 2.
 Use `prompt` to take two numbers from user and store it in variable `numA` and `numB`. Create a third variable called `sum`, using `+` operator add numA and numB , store it in varible `sum` and using alert display `sum` in browser.
@@ -95,12 +92,10 @@ Example:
 let num1 = prompt("Enter the first value"); 
 let num2 = prompt("Enter the first value");
 
-if(num1 === num2){
-    alert(true);
+if(isNaN(num1) || isNaN(num2)){
+    alert(`Enter a valid input`);
 }
-else if (num1 !== num2){
-    alert(false);
-}
-else {
-    alert("Enter a valid value")
+else (num1 !== num2)
+{
+    alert(num1 === num2);
 }
