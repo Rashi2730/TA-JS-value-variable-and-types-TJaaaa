@@ -60,58 +60,86 @@ else {
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
 
-let month = prompt("Enter the month number:");
+let monthName = prompt("Enter the month name:");
 
-switch(month)
+switch(monthName)
 {
-  case 1 :
-    alert("31");
+  case "January" :
+    alert("The number of days are : 31");
     break;
-  case 2 :
-    alert("28");
+  case "February" :
+    alert("The number of days are :28");
     break; 
-  case 3 :
-    alert("31");
+  case "March" :
+    alert("The number of days are :31");
     break;
-  case 4 :
-    alert("30");
+  case "April" :
+    alert("The number of days are :30");
     break;
-  case 5 :
-    alert("31");
+  case "May" :
+    alert("The number of days are :31");
     break;
-  case 6 :
-    alert("30");
+  case "June" :
+    alert("The number of days are :30");
     break; 
-  case 7 :
-    alert("31");
+  case "July" :
+    alert("The number of days are :31");
     break; 
-  case 8 :
-    alert("31");
+  case "August" :
+    alert("The number of days are :31");
     break; 
-  case 9 :
-    alert("30");
+  case "September" :
+    alert("The number of days are :30");
     break; 
-  case 10 :
-    alert("31");
+  case "October" :
+    alert("The number of days are :31");
     break; 
-  case 11 :
-    alert("30");
+  case "November" :
+    alert("The number of days are :30");
     break;
-  case 12 :
-    alert("31");
+  case "December" :
+    alert("The number of days are :31");
     break;
   default :
-    alert("Wrong entered number.");
+    alert("Wrong Input");
 }
 
 
 /* 7.
-- Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
+- Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amount from salery.Conditions are given below.
   - `Salary <= 20000` tax is 10 %
   - `Salary <= 40000` tax is 20 %
   - `Salary > 50000` tax is 30 %
 
 */
+
+let salery = prompt("Enter the salery");
+
+switch (true)
+{
+  case salery <= 20000 :{
+    let taxAmount = (salery * 10) / 100;
+    alert(`In-hand Amount is: ${salery - taxAmount}`);
+    break;
+  }
+  case salery <= 40000 :
+  {
+    let taxAmount = (salery * 20) / 100;
+    alert(`In-hand Amount is: ${salery - taxAmount}`);
+    break;
+  }
+  case salery > 50000 :
+  {
+    let taxAmount = (salery * 30) / 100;
+    alert(`In-hand Amount is: ${salery - taxAmount}`);
+    break;
+  }
+  default :
+    alert(`Wrong Input`);
+}
+
+
+
 
 //  if..else vs switch
 
@@ -126,6 +154,58 @@ Implement the condition give below using`if..else` and`switch` statement.
 
 */
 
+let marks = prompt("Enter the marks:")
+
+/* If else */
+
+if(marks>100){
+  alert(`"Marks can't be greater than 100"`);
+}
+else if((marks >80) && (marks < 100))
+{
+  alert(`"Grade A"`);
+}
+else if((marks > 50) && (marks < 80))
+{
+  alert(`"Grade B"`);
+}
+else if((marks > 30) && (marks < 50))
+{
+  alert(`"Grade C"`);
+}
+else if((marks >0))
+{
+  alert(`"Grade D"`);
+}
+else {
+  alert("Failed");
+}
+
+
+/* Switch Statement */
+
+switch(true) 
+{
+  case (marks>100):
+    alert(`"Marks can't be greater than 100"`);
+    break;
+  case ((marks >80) && (marks < 100)):
+    alert(`"Grade A"`);
+    break;
+  case  ((marks > 50) && (marks < 80)):
+    alert(`"Grade B"`);
+    break;
+  case ((marks > 30) && (marks < 50)):
+    alert(`"Grade C"`);
+    break;
+  case ((marks >0)):
+    alert(`"Grade D"`);
+    break;
+  default :
+    alert(`Not valid input.`);
+  }
+
+
 /* 9. Weather app
 
   - Ask user to provide the condition of the weather outside by asking `What is the weather like outside?`
@@ -135,3 +215,25 @@ Implement the condition give below using`if..else` and`switch` statement.
   - If`freezing` alert`Get your sweeter on`
   - Anything else should alert`Not a valid input`
 */
+
+let weather = prompt("What is the weather like outside?");
+
+if(weather === "sunny")
+{
+  alert(`Wear a T-shirt.`);
+}
+else if(weather === "hot")
+{
+  alert(`Get a hanky.`);
+}
+else if(weather === "rainy")
+{
+  alert(`Don't forget to take your raincoat.`);
+}
+else if(weather === "freezing")
+{
+  alert(`Get your sweater on.`);
+}
+else {
+  alert(`Not a valid input`)
+}
