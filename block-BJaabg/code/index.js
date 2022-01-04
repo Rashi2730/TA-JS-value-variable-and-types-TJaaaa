@@ -15,4 +15,10 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
+let count = prompt("Enter the purchase count:");
+for (let i=1; i <=count)
+{
+    
+}
+
 // ⛑ Answer of the above will `$334.76`.
