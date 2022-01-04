@@ -7,9 +7,30 @@
   - `if` the number is odd print the message "number is odd"
 */
 
+let num = prompt("Enter a number-:");
+
+if(num%2 == 0) {
+  alert(`number is even`);
+}
+else {
+  alert(`number is odd`);
+}
+
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
 
+let num1 = prompt("Enter first number-:");
+let num2 = prompt("Enter second number-:");
+
+if(num1>num2){
+  alert(`max value: ${num1}`);
+}
+else{
+  alert(`max value : ${num2}`);
+}
+
 // 3. Convert the above code using`?` terniary operator
+
+alert((num1>num2)? num1:num2);
 
 /*
 4. Write a program that asks the user for the house name and check the following conditions:
@@ -19,11 +40,70 @@
   - `else` print the message " All men must die"
 */
 
+let houseName = prompt("Enter the house name:");
+
+if(houseName == "stark") {
+  alert(`Winter is coming.`);
+}
+else if(houseName == "lannister"){
+  alert(`A lannister always pays his debt.`)
+}
+else {
+  alert(`All men must die.`);
+}
+
 // 5. Convert the above code using`?` terniary operator
+
+
 
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
+
+let month = prompt("Enter the month number:");
+
+switch(month)
+{
+  case 1 :
+    alert("31");
+    break;
+  case 2 :
+    alert("28");
+    break; 
+  case 3 :
+    alert("31");
+    break;
+  case 4 :
+    alert("30");
+    break;
+  case 5 :
+    alert("31");
+    break;
+  case 6 :
+    alert("30");
+    break; 
+  case 7 :
+    alert("31");
+    break; 
+  case 8 :
+    alert("31");
+    break; 
+  case 9 :
+    alert("30");
+    break; 
+  case 10 :
+    alert("31");
+    break; 
+  case 11 :
+    alert("30");
+    break;
+  case 12 :
+    alert("31");
+    break;
+  default :
+    alert("Wrong entered number.");
+}
+
 
 /* 7.
 - Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
