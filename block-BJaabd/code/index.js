@@ -11,6 +11,24 @@ Write a program that asks the user his/her age and check for the following condi
 👇
 */
 
+let age = prompt("Enter your age:");
+
+if(age>=12 && age<=55){
+  alert(`You can participate in the marathon`);
+}
+else if(age>=4 && age<=11){
+  alert(`You are too young to participate in the marathon`);
+}
+else if(age<4){
+  alert(`Hey kiddo ! Can you walk?`);
+}
+else if (age> 55) {
+  alert(`You are too old to participate in the marathon`)
+}
+else {
+  alert(`Enter a valid age`);
+}
+
 // Loops
 /*
 Given a positive integer `n`. Print the word (hello) in format of heeeello (letter 'e' must be repeated `n` times). Take input from prompt and print the result in alert.
@@ -22,11 +40,19 @@ n = 7 => output: heeeeeeello
 */
 // [Your code goes here]
 
+
+let n = prompt("Enter the times:");
+
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
 */
 // [Your code goes here]
+let sum=0;
+for(let j= 1 ; j<=n; j++){
+  sum = sum + j;
+}
+alert(sum);
 
 /* Switch Statement
 
@@ -47,6 +73,59 @@ Take a number value from user and alert the message if it matches the conditions
 */
 // [Your code goes here]
 
+
+let number = +prompt("Enter the Number:");
+
+switch(number)
+{
+  case number == 1:
+  {
+    alert("ONE");
+    break;
+  }
+  case number == 2:
+    {
+      alert("TWO");
+      break;  
+    }
+  case number == 3:
+    {
+      alert("THREE");
+      break;  
+    }
+  case number == 4:
+    {
+      alert("FOUR");
+      break;  
+    }
+  case number == 5:
+    {
+      alert("FIVE");
+      break;  
+    }
+  case number == 6:
+    {
+      alert("SIX");
+      break;  
+    }
+  case number == 7:
+    {
+      alert("SEVEN");
+      break;  
+    }
+  case number == 8: {
+    alert("EIGHT");
+    break;
+  }
+  case number == 9: 
+ {
+    alert("NINE");
+    break;
+  }
+  default :
+    alert("PLEASE TRY AGAIN");
+  
+}
 /*
 🎖Using switch statement do the following
 
@@ -62,6 +141,40 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 */
 
 // [Your code goes here]
+
+
+let marks = prompt("Enter the marks");
+
+switch(marks)
+{
+  case (marks>90 ):
+    alert("AA");
+    break;
+  case (marks>80 && marks<=90 ):
+    alert("AB");
+    break;
+  case (marks > 70 && marks<=80):
+    alert("BB");
+    break;
+  case (marks > 60 && marks<=70):
+    alert("BC");
+    break;
+  case (marks > 50 && marks<=60):
+    alert("CC");
+    break;
+  case (marks > 40 && marks<=50):
+    alert("CD");
+    break;
+  case (marks > 30 && marks<=40):
+    alert("DD");
+    break;
+  case (marks<= 30):
+    alert("FF");
+    break;
+    default :
+    alert("PLEASE TRY AGAIN");
+}
+
 
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
